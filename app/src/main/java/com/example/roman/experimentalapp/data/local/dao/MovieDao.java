@@ -12,7 +12,7 @@ import java.util.List;
 @Dao
 public interface MovieDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    long[] insertMoview(List<MovieEntity> movies);
+    long[] insertMovies(List<MovieEntity> movies);
 
     @Query("SELECT * FROM `MovieEntity`")
     List<MovieEntity> getMoviesByPage();
